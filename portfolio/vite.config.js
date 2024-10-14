@@ -17,7 +17,11 @@ export default defineConfig({
       '@fortawesome/fontawesome-svg-core': '/node_modules/@fortawesome/fontawesome-svg-core/index.js',
       '@fortawesome/free-solid-svg-icons': '/node_modules/@fortawesome/free-solid-svg-icons/index.js',
       '@fortawesome/free-brands-svg-icons': '/node_modules/@fortawesome/free-brands-svg-icons/index.js',
-      '@fortawesome/vue-fontawesome': '/node_modules/@fortawesome/vue-fontawesome/index.js'
+      '@fortawesome/vue-fontawesome': '/node_modules/@fortawesome/vue-fontawesome/index.js',
+      'vuetify': '/node_modules/vuetify',
+      'vuetify/styles': '/node_modules/vuetify/styles',
+      'vuetify/components': '/node_modules/vuetify/components',
+      'vuetify/directives': '/node_modules/vuetify/directives'
     },
     },
   });
