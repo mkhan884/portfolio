@@ -25,10 +25,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '@fortawesome/fontawesome-svg-core': '@fortawesome/fontawesome-svg-core/index.es.js', // Ensure the correct import
-      '@fortawesome/free-solid-svg-icons': '@fortawesome/free-solid-svg-icons/index.es.js',
-      '@fortawesome/vue-fontawesome': '@fortawesome/vue-fontawesome/index.es.js',
+      '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
 });
