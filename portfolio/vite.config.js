@@ -10,7 +10,15 @@ export default defineConfig({
   ],
   build: {
     rollupOptions: {
-      external: ["@fortawesome/fontawesome-svg-core", '@fortawesome/free-brands-svg-icons', '@fortawesome/free-brands-svg-icons', '@fortawesome/free-solid-svg-icons'], // list all external packages here
+      external: [
+        "@fortawesome/fontawesome-svg-core", 
+        '@fortawesome/free-brands-svg-icons', 
+        '@fortawesome/free-solid-svg-icons',
+        "@fortawesome/vue-fontawesome",
+        'vuetify',
+        'vuetify/components',
+        'vuetify/directives'
+      ],
     },
   },
   resolve: {
