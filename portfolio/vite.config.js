@@ -9,23 +9,10 @@ export default defineConfig({
     vue(),
   ],
   build: {
-    rollupOptions: {
-      external: [
-        '@fortawesome/fontawesome-svg-core', 
-        '@fortawesome/free-brands-svg-icons', 
-        '@fortawesome/free-solid-svg-icons',
-        "@fortawesome/vue-fontawesome",
-        'vuetify',
-        'vuetify/components',
-        'vuetify/directives',
-        'vuetify/styles'
-      ],
-    },
   },
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '@fortawesome': require.resolve('@fortawesome/fontawesome-svg-core')
+      '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   }
 })

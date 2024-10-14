@@ -16,9 +16,10 @@ const vuetify = createVuetify({
     directives,
 })    
 
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 library.add(faGithub, faLinkedin, faEnvelope, faCircleDown, faBars, faArrowLeft, faArrowRight);
 
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
 
 const app = createApp(App)
 
