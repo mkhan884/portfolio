@@ -11,7 +11,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: [
-        "@fortawesome/fontawesome-svg-core", 
+        '@fortawesome/fontawesome-svg-core', 
         '@fortawesome/free-brands-svg-icons', 
         '@fortawesome/free-solid-svg-icons',
         "@fortawesome/vue-fontawesome",
@@ -24,7 +24,8 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '@fortawesome': require.resolve('@fortawesome/fontawesome-svg-core')
     }
   }
 })
