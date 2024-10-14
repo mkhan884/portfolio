@@ -17,7 +17,8 @@ export default defineConfig({
         "@fortawesome/vue-fontawesome",
         'vuetify',
         'vuetify/components',
-        'vuetify/directives'
+        'vuetify/directives',
+        'vuetify/styles'
       ],
     },
   },
