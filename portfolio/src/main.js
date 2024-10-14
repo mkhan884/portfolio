@@ -1,10 +1,13 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faGithub } from '@fortawesome/free-brands-svg-icons'; // GitHub icon
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faCircleDown, faEnvelope, faBars, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+library.add(faGithub, faLinkedin, faEnvelope, faCircleDown, faBars, faArrowLeft, faArrowRight);
 
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
@@ -15,11 +18,6 @@ const vuetify = createVuetify({
     components,
     directives,
 })    
-
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-library.add(faGithub, faLinkedin, faEnvelope, faCircleDown, faBars, faArrowLeft, faArrowRight);
-
-
 
 const app = createApp(App)
 
