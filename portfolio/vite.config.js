@@ -6,7 +6,9 @@ import vue from '@vitejs/plugin-vue';
 const isVercel = process.env.VERCEL === '1';
 
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue()
+  ],
   build: {
     rollupOptions: {
       external: isVercel
