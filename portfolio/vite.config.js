@@ -2,17 +2,14 @@ import { fileURLToPath, URL } from 'node:url';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 
-// Check if we are on Vercel
-const isVercel = process.env.VERCEL === '1';
-
 export default defineConfig({
   plugins: [
     vue()
   ],
   build: {
     rollupOptions: {
-      external: isVercel
-        ? [
+      external:
+        [
             '@fortawesome/fontawesome-svg-core',
             '@fortawesome/free-brands-svg-icons',
             '@fortawesome/free-solid-svg-icons',
@@ -22,7 +19,6 @@ export default defineConfig({
             'vuetify/directives',
             'vuetify/styles',
           ]
-        : [],
     },
   },
   resolve: {
