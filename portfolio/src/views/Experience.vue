@@ -6,7 +6,7 @@
           v-for="item in experiences"
         >
           <template v-slot:opposite>
-            <span style="color: white; font-style: italic;">{{ item.date }}</span>
+            <span style="color: white; font-style: italic;" class="">{{ item.date }}</span>
           </template>
           <template v-slot:icon>
             <v-avatar :image="item.image" size="40px"></v-avatar>
@@ -74,13 +74,33 @@
   }
 
   @media (max-width: 768px) {
-    .timeline-container {
-      width: 100%;
-      height: 100vh;
-      overflow-y: auto;
-      padding: 20px;
-      font-size:  small;
-    }
+  .timeline-container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 10px;
+    font-size: small;
+    /* background-color: antiquewhite; */
+  }
+
+  .v-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .v-avatar {
+    height: 30px !important;
+    width: 30px !important;
+  }
+
+  .v-card-title {
+    font-size: small !important;
+  }
+
+  .v-card-text {
+    font-size: x-small !important;
+  }
+
   }
 
   </style>

@@ -148,6 +148,10 @@
       align-items: center;
     }
 
+    .icons a:hover {
+      font-size: 22px;
+    }
+
   }
 
   </style>
