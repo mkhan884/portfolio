@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "web-dev-server --node-resolve --open --watch"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
