@@ -1,11 +1,11 @@
 <template>
     <div class="timeline-container">
     <div class="timeline">
-      <v-timeline line-color="white" side="end">
+      <v-timeline line-color="white" side="end" truncate-line="both">
         <v-timeline-item
           v-for="item in experiences"
         >
-          <template v-slot:opposite>
+          <template v-slot:opposite v-if=!isMobile>
             <span style="color: white; font-style: italic;" class="">{{ item.date }}</span>
           </template>
           <template v-slot:icon>
@@ -15,6 +15,9 @@
             <v-card-title style="font-size: medium; font-weight: bold;">
               {{ item.title }}
             </v-card-title>
+            <v-card-subtitle v-if=isMobile>
+              {{ item.date }}
+            </v-card-subtitle>
             <v-card-text style="font-size: small;">
               {{ item.description }}
             </v-card-text>
@@ -61,6 +64,14 @@
           
         ]
       }
+    },
+    computed: {
+      isMobile (){
+        if(window.innerWidth > 768){
+          return false
+        }
+        return true
+      }
     }
   };
   </script>
@@ -78,7 +89,7 @@
     width: 100%;
     height: 100vh;
     overflow-y: auto;
-    padding: 10px;
+    padding: 30px;
     font-size: small;
     /* background-color: antiquewhite; */
   }
@@ -95,6 +106,10 @@
 
   .v-card-title {
     font-size: small !important;
+  }
+
+  .v-card-subtitle {
+    font-size: x-small !important;
   }
 
   .v-card-text {
