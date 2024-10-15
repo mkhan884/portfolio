@@ -9,8 +9,8 @@ import { faCircleDown, faEnvelope, faBars, faArrowLeft, faArrowRight } from '@fo
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 library.add(faGithub, faLinkedin, faEnvelope, faCircleDown, faBars, faArrowLeft, faArrowRight);
 
-import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
+import 'vuetify/styles'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 

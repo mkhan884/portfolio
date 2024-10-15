@@ -4,7 +4,10 @@ import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
   plugins: [
-    vue()
+    vue(),
+    vuetify({
+      autoImport: true,
+    }),
   ],
   build: {
     rollupOptions: {
