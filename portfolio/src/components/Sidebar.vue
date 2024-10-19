@@ -11,7 +11,7 @@
         <!-- <li><router-link to="/Projects">Projects</router-link></li> -->
       </ul>
     </nav>
-    <v-btn variant="tonal" color="white" class="mt-2" href="resume.pdf" download>
+    <v-btn variant="tonal" color="white" class="mt-2" href="resume-r.pdf" download>
       <v-icon left>
         <font-awesome-icon icon="fa-solid fa-circle-down" />
       </v-icon>
